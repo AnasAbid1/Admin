@@ -6,9 +6,9 @@ class DropdownWidget extends StatefulWidget {
 }
 
 class _DropdownWidgetState extends State<DropdownWidget> {
-  String _selectedItem = "Item 1";
+  String _selectedItem = "Karachi";
 
-  List<String> _dropdownItems = ['Item 1','Item 2','Item 3'];
+  List<String> _dropdownItems = ['Karachi','Lahore','Islamabad'];
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class _DropdownWidgetState extends State<DropdownWidget> {
             _selectedItem = value!;
           });
         },
-        hint: Text('Select an item'),
+        hint: Text('Select a City'),
       ),
     );
   }
